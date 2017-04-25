@@ -74,6 +74,60 @@
             </objects>
             <point key="canvasLocation" x="1576.8" y="-15.742128935532236"/>
         </scene>
+        <!--Login View Controller-->
+        <scene sceneID="M4J-gs-1cT">
+            <objects>
+                <viewController storyboardIdentifier="loginVC" id="tmw-sv-12x" customClass="loginViewController" customModule="storyboardPractice" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gkv-31-UCc"/>
+                        <viewControllerLayoutGuide type="bottom" id="glf-nb-jfH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aJH-wn-j1t">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="로그인" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nJv-vV-CAk">
+                                <rect key="frame" x="107" y="83" width="161" height="78"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="아이디" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gOK-vl-iBe">
+                                <rect key="frame" x="91" y="169" width="192" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="패스워드" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WFZ-Ut-1wH">
+                                <rect key="frame" x="91" y="207" width="192" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y0Y-Xr-BGB">
+                                <rect key="frame" x="107" y="245" width="161" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="login:" destination="tmw-sv-12x" eventType="touchUpInside" id="wM5-az-jtJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.72973093332345473" blue="0.096292921174333079" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="idTxtFld" destination="gOK-vl-iBe" id="Gsd-0E-R5j"/>
+                        <outlet property="pwdTxtFld" destination="WFZ-Ut-1wH" id="RMe-xf-045"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="njG-9I-4ay" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2326" y="-16"/>
+        </scene>
         <!--Blue View Controller-->
         <scene sceneID="2yF-sW-Q6a">
             <objects>
@@ -93,6 +147,15 @@
                                 <state key="normal" title="close"/>
                                 <connections>
                                     <action selector="close:" destination="YPK-Bi-BY1" eventType="touchUpInside" id="hOd-vs-vhL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aPE-Fl-qe1">
+                                <rect key="frame" x="123" y="123" width="128" height="78"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="로그인"/>
+                                <connections>
+                                    <action selector="login:" destination="YPK-Bi-BY1" eventType="touchUpInside" id="e7Z-gh-3xC"/>
                                 </connections>
                             </button>
                         </subviews>

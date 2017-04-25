@@ -1,5 +1,5 @@
 //
-//  blueViewController.swift
+//  loginViewController.swift
 //  storyboardPractice
 //
 //  Created by SDS-005 on 2017. 4. 25..
@@ -8,17 +8,13 @@
 
 import UIKit
 
-class blueViewController: UIViewController {
-
-    @IBAction func close(_ sender: Any) {
-        
-        self.dismiss(animated: true, completion: nil);
-    }
+class loginViewController: UIViewController {
     
+    @IBOutlet var idTxtFld: UITextField!
+    @IBOutlet var pwdTxtFld: UITextField!
+
     @IBAction func login(_ sender: Any) {
-        if let vc = storyboard?.instantiateViewController(withIdentifier: "loginVC") {
-        self.present(vc, animated: true, completion: nil);
-        }
+        
     }
     
     override func viewDidLoad() {
