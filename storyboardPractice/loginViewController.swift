@@ -15,6 +15,11 @@ class loginViewController: UIViewController {
 
     @IBAction func login(_ sender: Any) {
         
+        let userId = idTxtFld.text;
+        let userPwd = pwdTxtFld.text;
+        
+        print("ID : \(userId!), PWD : \(userPwd!)");
+        self.dismiss(animated: true, completion: nil);
     }
     
     override func viewDidLoad() {
